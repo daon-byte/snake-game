@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window x:Class="snake_game.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:game="clr-namespace:snake_game.Game"
+        Title="Loop Snake"
+        Width="1160" Height="980"
+        MinWidth="900" MinHeight="740"
+        Background="#070A14"
+        WindowStartupLocation="CenterScreen"
+        UseLayoutRounding="True"
+        SnapsToDevicePixels="True"
+        Loaded="Window_Loaded"
+        Deactivated="Window_Deactivated"
+        PreviewKeyDown="Window_PreviewKeyDown">
+    <Grid Background="#070A14">
+        <game:GameView x:Name="View" />
+    </Grid>
+</Window>
